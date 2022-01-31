@@ -1,2 +1,82 @@
-# survey.form
-Survey form for portfolio
+<DOCKTYPE.html>
+<html lang="eng">
+<head>
+<style>
+body{
+    font-family: sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+label{
+    font-size: 18px;
+    display: block;
+    padding-bottom: 10px;
+}
+input, textarea, select{
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+form{
+background-color: brown;
+padding: 40px 40px 40px 40px;
+}
+.radio-inline{
+    display: inline-block;
+    font-size: 20px;
+}
+#Radio-buttion-area{
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+#Checkbox-area{
+    
+}
+</style>
+</head>
+<body>
+<h1 id="title">Tell me About Google</h1>
+<p id="description">You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS.</p>
+<form id="survey-form">
+   <label id="name-label">Name:</label>
+     <input type="text" name="name" id="Name" placeholder="First Name" required></input><br><br>
+   <label id="email-label">Email:</label> 
+    <input type="text" name="Email" id="Email" placeholder="Email" required></input><br><br>
+   <label id="number-label">Number:</label> 
+    <input type="text" name="number" id="Number" min="0" max="10" placeholder="Number" required></input>
+  <br><br>
+  <label id="Guitars">Guitars Type:</label>
+  <select id="dropdown" name="guitars">
+        <option value="fender">fender</option>
+        <option value="Martine">Martine</option>
+        <option value="Epiphone">Epiphone</option>
+        <option value="Other">other</option>
+      </select>
+<br><br>
+<label id="Gender">Gender:</label>
+<div id="Radio-buttion-area">
+      <input type="radio" name="gender" value="Male">Male<br>
+      <input type="radio"  name="gender" value="Female">Female<br>
+      <input type="radio"  name="gender" value="Other">Other
+    </div>
+    <br>
+    <label id="Transport">Transporation Type:</label>
+    <div id="Checkbox-area">
+      <input type="checkbox"  name="vehicle1" value="Bike">I have a bike
+      <br>
+      <input type="checkbox"  name="vehicle2" value="Car"> i have a car
+     <br>
+      <input type="checkbox"  name="vehicle3" value="Boat">I have a boat
+    </div>
+<br>
+    <textarea placeholder="Additional Comment"></textarea>
+
+
+    <input type="submit">
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
